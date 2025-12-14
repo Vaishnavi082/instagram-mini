@@ -4,7 +4,7 @@ import auth from "../middleware/auth.js";
 
 const router = express.Router();
 
-// FOLLOW USER
+// following a user 
 router.post("/follow/:id", auth, async (req, res) => {
   try {
     const user = await User.findById(req.userId);
@@ -15,7 +15,7 @@ router.post("/follow/:id", auth, async (req, res) => {
     }
 
     if (user.following.includes(targetUser._id)) {
-      return res.status(400).json({ message: "Already following" });
+      return res.status(400).json({ message: "Already following the user" });
     }
 
     user.following.push(targetUser._id);
@@ -24,13 +24,13 @@ router.post("/follow/:id", auth, async (req, res) => {
     await user.save();
     await targetUser.save();
 
-    res.json({ message: "User followed" });
+    res.json({ message: "User is followed" });
   } catch (err) {
-    res.status(500).json({ message: "Follow failed" });
+    res.status(500).json({ message: "Follow failed, ugh" });
   }
 });
 
-// UNFOLLOW USER
+// unfollowing a user
 router.post("/unfollow/:id", auth, async (req, res) => {
   try {
     const user = await User.findById(req.userId);

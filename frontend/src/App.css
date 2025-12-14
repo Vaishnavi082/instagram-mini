@@ -1,17 +1,17 @@
-/* ===== RESET ===== */
+
 * {
   box-sizing: border-box;
 }
 
-/* ===== FULL PAGE BACKGROUND ===== */
+
 body {
   margin: 0;
   min-height: 100vh;
 
-  /* THIS IS THE KEY */
+ 
   display: flex;
-  justify-content: center;   /* horizontal centering */
-  align-items: flex-start;   /* start from top */
+  justify-content: center;   
+  align-items: flex-start;   
 
   background: linear-gradient(
     180deg,
@@ -26,7 +26,7 @@ body {
 }
 
 
-/* ===== CENTER COLUMN ===== */
+
 .container {
   width: 100%;
   max-width: 600px;
@@ -35,14 +35,14 @@ body {
 
 
 
-/* ===== HEADINGS ===== */
+
 h2 {
   text-align: center;
   color: white;
   margin-bottom: 30px;
 }
 
-/* ===== CREATE POST ===== */
+
 .create-post {
   background: white;
   border-radius: 14px;
@@ -69,7 +69,7 @@ h2 {
   cursor: pointer;
 }
 
-/* ===== POST CARD ===== */
+
 .post-card {
   background: white;
   border-radius: 14px;
@@ -91,7 +91,7 @@ h2 {
   padding: 12px 14px;
 }
 
-/* ===== FOOTER ===== */
+
 .post-footer {
   display: flex;
   justify-content: space-between;

@@ -3,7 +3,7 @@ Instagram Mini Clone
 A mini Instagram-style web application built using Node.js, Express, MongoDB, and React.
 This project demonstrates backend development skills, database relationships, authentication, and frontend-backend integration.
 
-🎯 Project Objective
+-Project Objective
 
 The goal of this project is to build a simplified Instagram-like system that supports:
 
@@ -19,8 +19,8 @@ Viewing a personalized feed
 
 This project was developed as part of a mini project assignment to test backend logic, database design, and full-stack integration.
 
-🚀 Features
-🔐 User Authentication
+-Features
+   -User Authentication
 
 User signup
 
@@ -30,7 +30,7 @@ Password hashing using bcrypt
 
 JWT-based authentication for protected routes
 
-🧑‍🤝‍🧑 Follow System
+  -Follow System
 
 Users can follow other users
 
@@ -38,7 +38,7 @@ Users can unfollow users
 
 Proper follower and following relationships are maintained
 
-📝 Post Creation
+   -Post Creation
 
 Authenticated users can create posts
 
@@ -48,7 +48,7 @@ Image URL
 
 Caption
 
-❤️ Likes
+ -Likes
 
 Users can like a post
 
@@ -56,7 +56,7 @@ Users cannot like the same post more than once
 
 Like count updates correctly
 
-💬 Comments
+ -Comments
 
 Users can comment on posts
 
@@ -68,36 +68,36 @@ User who commented
 
 Timestamp
 
-📰 Feed
+ -Feed
 
 Feed API returns posts only from users the logged-in user follows
 
 Mimics real Instagram feed behavior
 
-🛠 Tech Stack
-Backend
+ -Tech Stack
+1. Backend
 
-Node.js
+2. Node.js
 
-Express.js
+3. Express.js
 
-MongoDB Atlas
+4. MongoDB Atlas
 
-Mongoose
+5. Mongoose
 
-JWT (JSON Web Token)
+6. JWT (JSON Web Token)
 
-bcrypt
+7. bcrypt
 
-Frontend
+8. Frontend
 
-React (Vite)
+9. React (Vite)
 
-Fetch API
+10. Fetch API
 
-Custom CSS (Instagram-inspired pastel UI)
+11. Custom CSS (Instagram-inspired pastel UI)
 
-🗂 Database Design
+ -Database Design
 User Schema
 
 username
@@ -124,7 +124,7 @@ comments (user, text, createdAt)
 
 createdAt
 
-📡 API Endpoints
+  -API Endpoints
 Authentication
 
 POST /signup – Register a new user
@@ -184,7 +184,7 @@ Open the application in your browser:
 
 http://localhost:5173
 
-🧪 Testing
+  -Testing
 
 All backend APIs were tested using Postman
 
@@ -198,7 +198,7 @@ Like and Comment
 
 Feed updates based on follow/unfollow logic
 
-📌 Project Highlights
+ -Project Highlights
 
          -Demonstrates CRUD operations
 

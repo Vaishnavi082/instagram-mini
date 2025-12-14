@@ -5,11 +5,11 @@ function App() {
   const [posts, setPosts] = useState([]);
   const [message, setMessage] = useState("");
 
-  // 🔹 Create Post states
+  // Creating a  Post states
   const [imageUrl, setImageUrl] = useState("");
   const [caption, setCaption] = useState("");
 
-  // 🔹 Fetch Feed
+  //Fetching Feed
   useEffect(() => {
     const fetchFeed = async () => {
       const token = localStorage.getItem("token");
@@ -31,17 +31,17 @@ function App() {
         if (res.ok) {
           setPosts(data);
         } else {
-          setMessage(data.message || "Failed to load feed");
+          setMessage(data.message || "Failed to load the creative feed");
         }
       } catch {
-        setMessage("Server error ❌");
+        setMessage("Server error,ugh");
       }
     };
 
     fetchFeed();
   }, []);
 
-  // 🔹 Create Post handler
+  //Create Post handler
   const handleCreatePost = async (e) => {
     e.preventDefault();
 
@@ -80,7 +80,7 @@ function App() {
 
       <h2>Home Feed</h2>
 
-      {/* 🔹 Create Post UI */}
+      {/* Post UI */}
       <form onSubmit={handleCreatePost} style={{ marginBottom: "20px" }}>
         <h3>Create Post</h3>
 
@@ -108,7 +108,7 @@ function App() {
 
       {message && <p>{message}</p>}
 
-      {/* 🔹 Feed */}
+      {/* Feed */}
       {posts.map((post) => (
         <div
           key={post._id}
