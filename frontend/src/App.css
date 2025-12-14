@@ -1,0 +1,110 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== FULL PAGE BACKGROUND ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  /* THIS IS THE KEY */
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: flex-start;   /* start from top */
+
+  background: linear-gradient(
+    180deg,
+    #a97be6,
+    #c972e6,
+    #6b6fae
+  );
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  color: #262626;
+}
+
+
+/* ===== CENTER COLUMN ===== */
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px 20px;
+}
+
+
+
+/* ===== HEADINGS ===== */
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* ===== CREATE POST ===== */
+.create-post {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.create-post input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.create-post button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #0095f6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== POST CARD ===== */
+.post-card {
+  background: white;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.username {
+  padding: 14px;
+  font-weight: 600;
+}
+
+.post-card img {
+  width: 100%;
+  display: block;
+}
+
+.caption {
+  padding: 12px 14px;
+}
+
+/* ===== FOOTER ===== */
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  color: #666;
+}
+
+.like-btn {
+  width: calc(100% - 28px);
+  margin: 10px 14px 14px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #efefef;
+  cursor: pointer;
+}
